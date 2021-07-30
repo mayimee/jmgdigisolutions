@@ -1,0 +1,454 @@
+/*Fonts used: Monserrat Subrayada, Abril Fatface, Righteous*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat+Subrayada:wght@700&family=Righteous&display=swap');
+
+/*Generic CSS*/
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color: #E5E4E2 !important;
+}
+
+div.floatleft
+{
+    width: 50%;
+    float: left;
+}
+
+/*Header*/
+
+a.navi
+{
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #DEE5F4;
+    font-size: small;
+    font-weight: bold;
+}
+
+a.navi2
+{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+
+a.navi:hover
+{
+    text-decoration: underline;
+    color: black;
+    background-color: #E4D00A;
+}
+
+img.logo
+{
+    width: auto;
+    height: 60px;
+}
+
+div.header
+{
+    background-color: rgb(19, 18, 18);
+    display: flex;
+}
+
+div.nav, div.comlogo
+{
+    float: left;
+    width: 50%;
+}
+
+.btnsize
+{
+    height: 40px;
+    margin-top: 8px;
+}
+
+/*Introduction*/
+
+div.intro
+{
+    padding-left: 250px;
+    padding-right: 150px;
+    padding-top: 140px;
+    padding-bottom: 93px;
+    background: url(images/bg01.jpg) center center fixed;
+    display: flex;
+}
+
+img.logomain
+{
+    width:350px;
+    height: auto;
+    border-radius: 50px;
+}
+
+p.introduction
+{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+p.desc
+{
+    color: white;
+}
+
+p.transform
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+/*Services*/
+
+.stitle
+{
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+div.smain
+{
+    padding-top: 80px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.subtitle
+{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+.indent
+{
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.imgposi
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scopetext
+{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+.scope
+{
+    padding-left: 220px;
+    padding-right: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+.servdesc
+{
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.servdesctext
+{
+    text-align: center;
+}
+
+.servimg
+{
+    width: 300px;
+    height: auto;
+}
+
+.servimg02
+{
+    width: 200px;
+    height: auto;
+}
+
+/*Projects*/
+
+div.project 
+{
+    padding-top: 60px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.borderfix
+{
+    overflow: hidden;
+}
+
+img.imgproj
+{
+    width: 100%;
+    height: 200px;
+    position:relative;
+    transition: transform .5s ease;
+    background-size: cover;
+}
+
+img.imgproj:hover
+{
+    transform: scale(1.1);
+}
+
+p.textimg
+{
+    font-size: smaller;
+    text-align: justify;
+}
+
+/* Testimonials */
+
+div.testimonial
+{
+    padding: 60px;
+    display: flex;
+}
+
+.ttitle
+{
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+img.tsize
+{
+    height: 100px;
+    width: auto;
+    border-radius: 20%;
+}
+
+img.lsize
+{
+    width: 75px;
+    height: auto;
+}
+
+div.picblockleft
+{
+    padding-left: 170px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid lightgray;
+    text-align: center;
+}
+
+div.msgblockright
+{
+    padding-left: 80px;
+    padding-right: 200px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid lightgray;
+    text-align: justify;
+}
+
+div.picblockright
+{
+    padding-right: 200px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid lightgray;
+    text-align: center;
+}
+
+div.msgblockleft
+{
+    padding-left: 200px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid lightgray;
+    text-align: justify;
+}
+
+/*Our Team*/
+
+div.team
+{
+    display: flex;
+    padding-top: 90px;
+}
+
+.ustitle
+{
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+div.teamtext
+{
+    width: 50%;
+    float: left;
+    font-size: large;
+    font-weight: 100px;
+    padding-left: 100px;
+    padding-right: 90px;   
+    padding-top: 30px;
+    text-align: justify;
+}
+
+img.teampict
+{
+    width: 550px;
+    border-radius: 30px;
+}
+
+div.vision
+{
+    padding-top: 90px;
+}
+
+.idpic
+{
+    height: 200px;
+}
+
+.awardsmain
+{
+    padding: 20px;
+}
+
+.awardstext
+{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Righteous', cursive;
+}
+
+img.awardpic
+{
+    margin: auto;
+    height: 200px;
+    padding-bottom: 15px;
+    transition: transform .5s ease;
+}
+
+img.awardpic:hover
+{
+    transform: scale(1.1);
+}
+
+.awardrow
+{
+    padding-left: 25px;
+}
+
+.membertext
+{
+    padding-left: 300px;
+    padding-right: 300px;
+    text-align: center;
+}
+
+.memberpic
+{
+    padding-left: 85px;
+    height: 150px;
+}
+
+.subtitle01
+{
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+}
+
+.memdescdiv
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.memdesc
+{
+    text-align: justify;
+}
+
+/* Contact Us */
+
+.contactUs {
+    display: flex;
+    flex-wrap: row-wrap;   
+}
+
+.ctitle
+{
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.contactUs, .emailPhonePreferred {
+    padding: 10%;
+}
+
+.grid {
+    display: grid;
+}
+
+
+.input {
+    border: 1px solid #C3E0E5;
+    background: #F0F8FF;
+}
+
+.sendButtonContainer {
+    text-align: center;
+}
+
+.textareaspace
+{
+    height: 150px;
+}
+
+.labelspace
+{
+    padding: 10px;
+}
+
+.required
+{
+    font-style: italic;
+    color: gray;
+    font-size: small;
+}
+
+/*Footer*/
+
+div.footer
+{
+    text-align: center;
+    background-color: rgb(19, 18, 18);
+    color: white;
+    font-size: smaller;
+}
+
+img.comlogo
+{
+    height: 80px;
+}
+
+/*Media Responsiveness*/

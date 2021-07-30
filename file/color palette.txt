@@ -1,0 +1,9 @@
+#E34234 - cinnabar (orange)
+#050533 - dark blue
+#F2F1E8 - ivory
+#0D698B - blue grotto
+
+#8EB2C0 - blue
+#F3F6F0 - cream
+#355360 - charcoal
+#8A6460 - cognac (lightbrown)

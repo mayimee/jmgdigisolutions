@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="HandheldFriendly" content="true">
+
+        <title>Grace Betanzor's Portfolio</title>
+
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    </head>
+
+<style>
+      /*Fonts used: Monserrat Subrayada, Abril Fatface*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat+Subrayada:wght@700&display=swap');
+
+/*Generic CSS*/
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color: #E5E4E2 !important;
+}
+
+/*Header*/
+
+a.navi
+{
+    margin: auto 5px auto 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: #DEE5F4;
+    font-size: small;
+    font-weight: bold;
+    justify-content:space-between;
+}
+
+a.navi:hover
+{
+    text-decoration: underline;
+    color: black;
+    
+}
+
+img.navi:hover, a.navi:hover {
+  background-color: #a2b9a2;
+  border-radius: 2px;
+  padding:5px;
+}
+
+div.header
+{
+    background-color: rgb(19, 18, 18);
+    display: flex;
+}
+
+
+.buttonNav
+{
+    height: 25px;
+    background-color: #a2b9a2;
+    border-radius: 5px;
+    padding: 3px 3px 3px 3px;
+    color: Black;
+    font-size: 11px;
+    font-weight: heavy;
+
+    
+}
+.buttonNav:hover {
+  background-color: black;
+  color:white;
+}
+
+
+.buttonHome
+{
+  
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: heavy;
+
+    
+}
+.buttonHome:hover {
+  background-color: #a2b9a2;
+  color:black;
+}
+
+
+/* Contact Us */
+
+.contactUs {
+    display: flex;
+    flex-wrap: row-wrap;   
+}
+
+.ctitle
+{
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.contactUs, .emailPhonePreferred {
+    padding: 10%;
+}
+
+.grid {
+    display: grid;
+}
+
+
+.input {
+    border: 1px solid #C3E0E5;
+    background: #F0F8FF;
+}
+
+.sendButtonContainer {
+    text-align: center;
+}
+
+.textareaspace
+{
+    height: 150px;
+}
+
+.labelspace
+{
+    padding: 10px;
+}
+
+.required
+{
+    font-style: italic;
+    color: gray;
+    font-size: small;
+}
+
+/*Footer*/
+
+div.footer
+{
+    text-align: center;
+    background-color: rgb(19, 18, 18);
+    color: white;
+    font-size: smaller;
+}
+
+.page1text, .page1h3, .page1h6 {
+    color: white;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+
+/*Services*/
+
+.stitle
+{
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+div.smain
+{
+    padding-top: 80px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.subtitle
+{
+    text-align: center;
+}
+
+.indent
+{
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.imgposi
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scopetext
+{
+    text-align: center;
+}
+
+.scope
+{
+    padding-left: 220px;
+    padding-right: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+.servdesc
+{
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servdesctext
+{
+    text-align: center;
+}
+
+.servimg
+{
+    width: 300px;
+    height: auto;
+}
+
+.servimg02
+{
+    width: 200px;
+    height: auto;
+}
+
+/*Projects*/
+
+div.project 
+{
+    padding-top: 60px;
+}
+
+/* Testimonials */
+
+
+
+.ttitle
+{
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+img.tsize
+{
+    height: 100px;
+    width: auto;
+    border-radius: 20%;
+}
+
+img.lsize
+{
+    width: 75px;
+    height: auto;
+}
+
+div.picblockleft
+{
+    padding-left: 170px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid lightgray;
+    text-align: center;
+}
+
+div.msgblockright
+{
+    padding-left: 80px;
+    padding-right: 200px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid lightgray;
+    text-align: justify;
+}
+
+div.picblockright
+{
+    padding-right: 200px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid lightgray;
+    text-align: center;
+}
+
+div.msgblockleft
+{
+    padding-left: 200px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid lightgray;
+    text-align: justify;
+}
+
+/* bullet line color */
+li {
+  padding:2px
+}
+
+li:hover {
+  text-decoration: underline;
+    background: #182628;
+    opacity: .5;
+    color: whitesmoke;
+    border-radius: 2px;
+   
+}
+
+
+.projectLabels {
+  font-size: 20px;
+  font-weight: heavy;
+  
+}
+
+.projectImage {
+  height: auto;
+  width: 60%;;
+  justify-content: center;
+}
+
+
+    </style>
+
+    <body>
+
+      <div class="header container-fluid fixed-top" style="background-image: url('./Images_Grace/Background_Cloudy_Dark.png'); height: 12vh; text-align:right">
+
+        <div class="col-md-4 container-fluid" style="display: flex; margin-left: 30px">
+          <img class="projectImage" src='./Images_Grace/Me.jpg' class="navBarImage" style="border-radius: 100px; filter: brightness(90%); width: auto; height: 7vh; margin: auto 1px auto 20px; ">
+          <h6 class="page1text" style="margin: auto 1px auto 20px; ">GRACE BETANZOR</h6>
+          <h6 class="page1text" style="margin: auto 1px auto 10px; ">|</h6>
+          <input type="submit" class="buttonNav" value="Download CV"  style="margin: auto 1px auto 10px">
+        </div>
+        
+        <div class="col-md-8 container-fluid" style="text-align: right; padding-right: 100px; margin-top: auto; margin-bottom: auto">
+          <a href="#home" class="navi">Home</a>
+          <a href="#skillsProjects" class="navi" style="margin-left: 25px">Skills and Projects</a>
+          <a href="#educationTrainings" class="navi" style="margin-left: 25px">Education & Trainings</a>
+          <a href="#contact" class="navi" style="margin-left: 25px">Contact</a>
+          <img class="projectSocMed" src="./Images_Grace/Logo - Facebook.png"class="navi" width="auto" height="15px" style="margin-left: 25px;">
+          <img class="projectSocMed" src="./Images_Grace/Logo - Twitter.png" class="navi" width="auto" height="15px" style="margin-left: 10px">
+          <img class="projectSocMed" src="./Images_Grace/Logo - LinkedIn.png" class="navi" width="auto" height="15px" style="margin-left: 10px">
+        </div>
+
+      </div>
+
+      <!--HOME-->
+      <div id="home">
+        <div class="top" style="background-image: url('./Images_Grace/Background_Cloudy_Dark.png'); height: 70vh; padding:170px">
+          <h1 class="page1text">Hi, I'm Gi. </h1>
+          <h3 class="page1h3">A future Full-Stack Developer!</h3>
+          <h6 class="page1h6">  I am passionate about digital technology and would love to discuss how we can dispurt the way digital works.
+          <br>
+          <br>
+          
+          <a href="#contact"><input type="submit" class="buttonHome" value="Get In Touch"></a> 
+        </div>
+        <div class="bottom" style="background: #a2b9a2; height: 30vh; padding-right: 170px ; padding-left: 170px; padding-top: 40px">
+          I am a self-starter and out-of-the-box thinker seeking to make meaningful contributions in a work environment that contributes to nation building and conducive to personal growth. Being passionate about simplifying processes, procedures and systems, I am hoping not only to add value to your organization but also to make positive impact to the country.
+          </div>
+      
+      <!--SKILLS AND PROJECTS-->
+
+      <div class="testimonial" id="skillsProjects" style="text-align: center;">
+
+        <div class="" style="padding-top: 100px">
+          <h1 class="ttitle">Here are some of what I do</h1>
+          <div style="padding-right: 70px; padding-left:70px">Program Mangement | Financial Management | Monitoring & Evaluation System Design and Implementation | Feedback Mechanism Operationalization
+            <br>Data Collection and Analysis |Training Design and Facilitation | Technical and Legal Writing | HR, Procurement, and Logistics Support</div>
+
+          <br><br>
+
+        
+        </div>       
+          
+        
+        <img class="projectImage" src="./Images_Grace/Sample_Work-Baseline_Study.png"><br> 
+        <h4>Baseline Study</h4><br><br> <br><br> <br>
+
+
+        
+        <img class="projectImage" src="./Images_Grace/Sample_Work-Guidebooks.png" ><br> 
+       <h4>Guidebook Development | Training Materials | Training Design and Facilitation</h4><br><br> <br><br> <br>
+
+          <img class="projectImage" src="./Images_Grace/Sample_Work-Law.png"><br> 
+      <h4>Legal Guidelines | Implementing Rules and Regulation</h4><br><br> <br><br> <br>
+        
+
+
+        
+        <img class="projectImage" src="./Images_Grace/Sample_Work-Data_Management.png"><br> 
+        <h4>Data Management | Data Analysis | Mobile Data Collection</h4><br><br> <br><br> <br>
+        
+
+        
+        <img class="projectImage" src="./Images_Grace//Sample_Work-Workplans.png"><br>
+        <h4>Workplans</h4><br>  <br><br> <br><br> <br>
+          
+        <br><br>
+            <h1>KodeGo Boot Camp</h1>
+<hr style="width:30%; margin:auto">
+            <br><br> <br>
+        
+        <img class="projectImage" src="./Images_Grace/Sample_Work-Code_Tables.png"><br> 
+        <h4>Tables</h4><br><br><br> <br><br> <br>
+
+        
+        
+        <img class="projectImage" src="./Images_Grace//Sample_Work-Code_Layouts.png"><br> 
+        <h4>Sample_Work-Code_Layouts</h4><br><br><br> <br><br> <br>
+
+        
+        
+          <img class="projectImage" src="./Images_Grace/Sample_Work-Code_Payment_Form.png"><br> 
+          <h4>Payment Form</h4><br><br><br> <br><br> <br>
+              
+          
+        <img class="projectImage" src="./Images_Grace//Sample_Work-Code_Flowcharts.png"><br> 
+        <h4>Flowchart</h4><br> <br><br> <br><br> <br>
+        
+        <img src="./Images_Grace/Sample_Work-Code_Calculators.png" height="15%"><br> 
+        <h4>JavaScript Calculator</h4><br><br><br> <br><br> <br>
+              
+      </div>  
+
+  
+<!-- EDUCATION AND TRAININGS -->
+<div id="educationTrainings" style="padding-top:120px; padding-left: 50px; padding-right:50px">
+  
+  <h1 class="ttitle"><strong>Education & Trainings</strong></h1>
+  <div style="display: flex">
+      <div style="padding-top:20px; margin-right: 50px; padding-left: 50px">
+          <h5 class>Education</h5>
+          <br>
+
+          &nbsp;&nbsp;&nbsp;<strong>Bachelor of Science in Management</strong>							            
+          <br>&nbsp;&nbsp;&nbsp;University of the Philippines Visayas Tacloban College
+          
+          <br><br>&nbsp;&nbsp;&nbsp;<strong>Bachelor of Laws</strong>
+          <br>&nbsp;&nbsp;&nbsp;Dr. Vicente Orestes Romualdez Educational Foundation                           
+          	      						     
+          		
+          <br>
+          <br><br>
+          <h5>Certifications</h5>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Civil Service Professional Eligibility
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project Management for Development Professionals	    
+      </div>
+   
+      <div style="padding-top:20px; margin-right: 20px; ">
+      <h5>Trainings</h5>
+      <br>
+          <ul class="ulTrainings">
+              <li>Project Management for Development Professionals (PMD Pro) Level I</li>
+              <li>The 4 Essential Roles of Leadership</li>
+              <li>Response 201: Operations Management Coordination and Continuity of Operations Training</li>
+              <li>Planning, Monitoring, Evaluation and Reporting Training</li>
+              <li>Basic Regulatory Impact Assessment Training of Trainers</li>
+              <li>Standard Disaster Risk Reduction and Management Training</li>
+              <li>Demographic Dividend Training</li>
+              <li>Participatory Hygiene Approach in Sanitation Transformation Training of Trainers (PHAST ToT)</li>
+              <li>Family Planning (FP) Mentors in the Workplace Training</li>        
+              <li>Standard First Aid and Basic Life Support Training</li>      
+              <li>Basic Life Support</li>
+              <li>Community First Aid Training</li>
+          </ul>
+    </div>
+  </div>
+</div>      
+
+      <!--CONTACT-->
+      <div class="contactUs" id="contact" >
+    
+        <div class="contactUsForm" style="padding-top:0; margin-top: 0; margin-right:auto; margin-left:auto">
+            <h3 class="ctitle"><strong>What can I build for you?</strong></h3>
+            
+            <form>
+                <div class="formContainer" style="padding-top:0;">
+                    <span class="grid"><label for="firstName" class="labelspace" style="padding-bottom:0; padding-top:2px; font-size: 15px">First Name*<br></label>
+                    <input class="input" type="text" required oninvalid="this.setCustomValidity('Please enter your first name.')" oninput="setCustomValidity('')" style="border-radius: 5px;"><span><br>
+                    
+                    <span class="grid"><label for="lastName" class="labelspace" style="padding-bottom:0; padding-top:2px; font-size: 15px">Last Name<span>*<span><br></label>
+                    <input class="input" type="text" required oninvalid="this.setCustomValidity('Please enter your last name.')" oninput="setCustomValidity('')" style="border-radius: 5px;"><span><br>
+    
+                    <span class="grid"><label for="company" class="labelspace" style="padding-bottom:0; padding-top:2px; font-size: 15px">Company/Organization</label>
+                    <input class="input" type="text"></span class="grid" style="border-radius: 5px;">
+    
+                    <span class="grid"><label for="email" class="labelspace" style="padding-bottom:0; padding-top:2px; font-size: 15px">Email*<br></label>
+                    <input class="input" type="email" required  oninvalid="this.setCustomValidity('Please provide a valid email address.')" oninput="setCustomValidity('')" style="border-radius: 5px;"><span><br>
+    
+                    <span class="grid"><label for="phoneNumber" class="labelspace" style="padding-bottom:0; padding-top:2px; font-size: 15px">Phone number</label>
+                    <input class="input" type="text" style="border-radius: 5px;"></span class="grid">
+    
+                    <span class="grid"><label for="message" class="labelspace" style="padding-bottom:0; padding-top:2px; font-size: 15px;">What do you need help with?*<br></label>
+                    <textarea class="input textareaspace" name="message" required oninvalid="this.setCustomValidity('Please enter your message.')" oninput="setCustomValidity('')" style="border-radius: 5px;"></textarea><span><br>
+                    <p style="padding-top:px; font-size: 12px; margin-top:0">*Required fields</p>
+                    
+                    <input type="submit" class="sendButton btn btn-secondary" value="Send" style="width:20%; margin: auto; display:flex; justify-content: center;">
+                </div>
+               
+            </form>
+        </div>
+        <div class="emailPhonePreferred">
+    
+            <h4><strong>Prefer to email or phone?</h4></strong>
+    <br>
+            <h5>graceBetanzor22@gmail.com<br>
+            +(63) 998-192-3360<br>
+            +(63) 917-412-2502</h5>
+    
+        </div>
+    </div>
+
+    <div class="footer" style="background-image: url('/Images - Grace/Background\ -\ Background - Cloudy Dark.png'); height: 5vh; margin-top:auto; margin-bottom:auto; padding-top:auto" >
+      All Rights Reserved | Privacy Policy
+    </div>
+
+    </body>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</html>
+
+
+  <input type="submit" class="sendButton" value="Send">
