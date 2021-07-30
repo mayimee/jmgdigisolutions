@@ -126,6 +126,7 @@ div.smain
     padding-top: 80px;
     padding-left: 300px;
     padding-right: 300px;
+    background-color: #ecebe8 !important;
 }
 
 .subtitle
@@ -228,6 +229,7 @@ div.testimonial
 {
     padding: 60px;
     display: flex;
+    background-color: #ecebe8 !important;
 }
 
 .ttitle
